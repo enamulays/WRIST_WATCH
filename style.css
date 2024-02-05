@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+body {
+    background-color:rgb(105, 136, 126);
+}
+.strap {
+    height: 100vh;
+    width: 7.5em;
+    border: .12em solid rgb(76, 72, 72);
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    background: radial-gradient(#47463b .15rem, #7ab982 .15rem);
+    background-size: 1.12rem 1.12rem;
+    background-position: -.2rem;
+}
+.strap::before {
+    content: '';
+    height: 100vh;
+    width: 1.7em;
+    border: .12em solid rgb(76, 72, 72);
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    background: rgb(90, 139, 217);
+    background-size: 1.12rem 1.12rem;
+    background-position: -.2rem;
+}
+.watch {
+    background: rgb(221, 220, 220);
+    height: 11.12rem;
+    width: 11.12rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem .1rem rgb(49, 47, 47), 0 0 0 0.9rem #ccc8c9, 0 0 0 1rem rgb(49, 47, 47)
+}
+.pin {
+    background: linear-gradient(rgb(69, 66, 66), #7f7b7c);
+    height: 1rem;
+    width: 1rem;
+    border: .1rem solid rgb(26, 25, 25);
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: calc(50% + 6.5rem);
+    border-radius: .2rem;    
+}
+.watch img {
+    height: 100%;
+}
+.hand {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    margin: auto;
+    background: rgb(0, 0, 0);
+    border-radius: .2rem;
+    transform-origin: bottom;
+}
+.hour {
+    height: 3rem;
+    width: .5rem;
+    top: 3rem;
+    left: 5.25rem;
+}
+.minute {
+    height: 3.5rem;
+    width: .3rem;
+    top: 2.5rem;
+    background: rgb(155, 111, 90);
+    left: 5.4rem;
+}
+.seconds {
+    height: 4.2rem;
+    width: .2rem;
+    top: 1.8rem;
+    background: rgb(202, 17, 17);
+    left: 5.4rem;
+}
+.center {
+    width: .6rem;
+    height: .6rem;
+    background: black;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
